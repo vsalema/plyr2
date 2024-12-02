@@ -1,6 +1,11 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Document sans nom</title>
 
-<style>
-body {
+	<style>
+	body {
     margin: 0;            /* Reset default margin */
 }
 iframe {
@@ -10,10 +15,54 @@ iframe {
     height: 100vh;        /* Viewport-relative units */
     width: 100vw;
 }
-</style>
 
+.stacked2.unrelatedChild2 {
+  width: 100%;
+  height: 87px;
+  background: #1c1c1c;
+  z-index: 2;
+  left: -106px;
+  position: relative;
+  top: 28px;
+}
 
-<iframe src="https://www.elahmad.com/tv/plyr.php?id=https://streaming-live.rtp.pt/liverepeater/smil:rtpi.smil/chunklist_b640000_slpt.m3u8" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;">
+ .top {
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  position: relative;
+  padding-bottom: 175%;
+  transform: translateY(-35.95%);
+}
+	</style>
+	
+	</head>
+
+<body>
+
+	
+	
+	<div class="top">
+  <div class="wrapper">
+<button onclick="toggle()">
+	  <iframe src="https://codepen.io/vsalema/full/jENPKRq" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" frameborder="0" allowfullscreen="" webkitallowfullscreen="true" mozallowfullscreen="true" oallowfullscreen="true" msallowfullscreen="true">
     Your browser doesn't support iframes
 </iframe>
+Make that iframe full screen</button>
 
+
+	  <div class="unrelatedChild2 stacked2"><code></code></div>
+	
+	
+	<script>
+  function toggle() {
+    document.querySelector('iframe').requestFullscreen();
+  }
+</script>
+	
+	</body>
+</html>
